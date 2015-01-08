@@ -1,0 +1,48 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="29px" height="29px" viewBox="0 0 29 29">
+<defs>
+<linearGradient id="Gradient_1" gradientUnits="userSpaceOnUse" x1="92.075" y1="612.5" x2="116.22500000000001" y2="612.5" spreadMethod="pad">
+<stop  offset="0%" stop-color="#830000"/>
+
+<stop  offset="100%" stop-color="#520000"/>
+</linearGradient>
+
+<linearGradient id="Gradient_2" gradientUnits="userSpaceOnUse" x1="104" y1="601.7375" x2="104" y2="621.7625" spreadMethod="pad">
+<stop  offset="0%" stop-color="#FFFFFF" stop-opacity="0.5019607843137255"/>
+
+<stop  offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+
+<stop  offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+</linearGradient>
+
+<g id="Layer0_0_MEMBER_0_FILL">
+<path fill="#222223" stroke="none" d="
+M 114.55 622.85
+Q 118.85 618.55 118.85 612.5 118.85 606.4 114.55 602.05 110.3 597.85 104.15 597.85 98.1 597.85 93.8 602.05 89.5 606.4 89.5 612.5 89.5 618.55 93.8 622.85 98.1 627.2 104.15 627.2 110.3 627.2 114.55 622.85 Z"/>
+</g>
+
+<g id="Layer0_0_MEMBER_1_FILL">
+<path fill="url(#Gradient_1)" stroke="none" d="
+M 112.7 621.05
+Q 116.3 617.55 116.3 612.5 116.3 607.55 112.7 604 109.2 600.45 104.25 600.45 99.2 600.45 95.7 604 92.1 607.55 92.1 612.5 92.1 617.55 95.7 621.05 99.2 624.55 104.25 624.55 109.2 624.55 112.7 621.05 Z"/>
+</g>
+
+<g id="Layer0_0_MEMBER_1_MEMBER_0_FILL">
+<path fill="url(#Gradient_2)" stroke="none" d="
+M 96.95 618.9
+Q 99.9 621.85 104 621.85 108.15 621.85 111.15 618.9 114 615.95 114 611.85 114 607.7 111.15 604.75 108.15 601.8 104 601.8 99.9 601.8 96.95 604.75 94 607.7 94 611.85 94 615.95 96.95 618.9 Z"/>
+</g>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, -89.5,-597.85) ">
+<use xlink:href="#Layer0_0_MEMBER_0_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, -89.5,-597.85) ">
+<use xlink:href="#Layer0_0_MEMBER_1_FILL"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, -89.5,-597.85) ">
+<use xlink:href="#Layer0_0_MEMBER_1_MEMBER_0_FILL"/>
+</g>
+</svg>
