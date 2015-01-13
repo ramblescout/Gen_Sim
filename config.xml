@@ -3,14 +3,14 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.peninsulatrackclub.gensim"
         versionCode = "10" 
-        version     = "1.0.0" >
+        version     = "1.0.2" >
 
     <!-- versionCode is optional and Android only -->
 
     <name>Generator Simulator</name>
 
     <description>
-        First Simulation App. 
+        First Simulation App, for Android Tablets. 
     </description>
 
     <author href="http//peninsulatrackclub.com" email="theaellen@hotmail.com">
