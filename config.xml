@@ -7,10 +7,10 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Generator Simulator</name>
+    <name>Generator Switchboard Simulator</name>
 
     <description>
-        First Simulation App, for Android Tablets. 
+        First Simulator App, for Android Tablets. 
     </description>
 
     <author href="http//peninsulatrackclub.com" email="theaellen@hotmail.com">
@@ -18,6 +18,8 @@
     </author>
 
   <gap:platform name="android" />
+  <preference name="permissions" value="none" />
+  
 </widget>
 
   
