@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Genertor Switchboard Simulation </title>
+	<title> Generator Switchboard Simulation </title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-	<title>Untitled</title>
+  <meta name="viewport" content="width=device-width, user-scalable=yes">
+	<title>Generator Switchboard Simulation</title>
 <!--Adobe Edge Runtime-->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <script type="text/javascript" charset="utf-8" src="edge_includes/edge.5.0.0.min.js"></script>
@@ -14,12 +14,12 @@
 <script>
    AdobeEdge.loadComposition('gen_sim', 'EDGE-55308311', {
     scaleToFit: "none",
-    centerStage: "horizontal",
+    centerStage: "none",
     minW: "768px",
     maxW: "undefined",
     width: "1024",
     height: "768"
-}, {"dom":{}}, {"dom":{}});
+}, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","1024px","768px"],"fill":["rgba(255,255,255,1)"]}},"dom":{}}, {"style":{"${symbolSelector}":{"isStage":"true","rect":["undefined","undefined","1024px","768px"]}},"dom":{}});
 </script>
 <!--Adobe Edge Runtime End-->
 
@@ -27,10 +27,8 @@
 <body style="margin:0;padding:0;">
 	<div id="Stage" class="EDGE-55308311">
 	
-        <div id="Stage_gen_simCopy2" class="edgeLoad-EDGE-55308311"></div>
-        <div id="Stage_gen_sim" class="edgeLoad-EDGE-55308311"></div>
         <div id="Stage_bypass" class="edgeLoad-EDGE-55308311"></div>
-        <div id="Stage_Rectangle" class="edgeLoad-EDGE-55308311"></div>
+        <div id="Stage_gen_sim_2015" class="edgeLoad-EDGE-55308311"></div>
         <div id="Stage_BoxDivider" class="edgeLoad-EDGE-55308311"></div>
         <div id="Stage_RoundRect" class="edgeLoad-EDGE-55308311"></div>
         <div id="Stage_syncharrow" class="edgeLoad-EDGE-55308311">
@@ -104,7 +102,6 @@
         </div>
         <div id="Stage_sync_switch_gen2" class="edgeLoad-EDGE-55308311">
             <div id="Stage_sync_switch_gen2_lockout4"></div>
-            <div id="Stage_sync_switch_gen2_hiliteCopy"></div>
         </div>
         <div id="Stage_circuitBreaker1" class="edgeLoad-EDGE-55308311">
             <div id="Stage_circuitBreaker1_br_contr_gen1">
@@ -118,9 +115,7 @@
             <div id="Stage_br_contr_gen2_hiliteCopy2"></div>
         </div>
         <div id="Stage_groundLights" class="edgeLoad-EDGE-55308311">
-            <div id="Stage_groundLights_leftlight"></div>
             <div id="Stage_groundLights_cenerlight"></div>
-            <div id="Stage_groundLights_rightlight"></div>
             <div id="Stage_groundLights_lamp_white_sm4">
                 <div id="Stage_groundLights_lamp_white_sm4_lamp_white_small4"></div>
             </div>
@@ -219,6 +214,7 @@
             <div id="Stage_light_red_gen2_1_light_red2"></div>
         </div>
         <div id="Stage_light_red_gen1_1" class="edgeLoad-EDGE-55308311">
+            <div id="Stage_light_red_gen1_1_Rectangle2"></div>
             <div id="Stage_light_red_gen1_1_EllipseCopy"></div>
             <div id="Stage_light_red_gen1_1_light_red"></div>
         </div>
@@ -257,6 +253,10 @@
             <div id="Stage_rheo_speed_gen2_hilite"></div>
             <div id="Stage_rheo_speed_gen2_backround"></div>
         </div>
+        <div id="Stage_speed_control2" class="edgeLoad-EDGE-55308311">
+            <div id="Stage_speed_control2_RoundRect2Copy"></div>
+            <div id="Stage_speed_control2_RoundRect2"></div>
+        </div>
         <div id="Stage_acellerate1" class="edgeLoad-EDGE-55308311">
             <div id="Stage_acellerate1_right_arrow"></div>
         </div>
@@ -268,6 +268,10 @@
         </div>
         <div id="Stage_decellerate2" class="edgeLoad-EDGE-55308311">
             <div id="Stage_decellerate2_left_arrow"></div>
+        </div>
+        <div id="Stage_viewEngPanbtn" class="edgeLoad-EDGE-55308311">
+            <div id="Stage_viewEngPanbtn_Text4">Engine Room</div>
+            <div id="Stage_viewEngPanbtn_enginePanelBtn"></div>
         </div>
         <div id="Stage_RPMgages" class="edgeLoad-EDGE-55308311">
             <div id="Stage_RPMgages_rpm2">0</div>
@@ -286,14 +290,6 @@
                     <div id="Stage_engineRoom_enginelights2_EllipseCopy6"></div>
                     <div id="Stage_engineRoom_enginelights2_EllipseCopy5"></div>
                     <div id="Stage_engineRoom_enginelights2_EllipseCopy4"></div>
-                </div>
-            </div>
-            <div id="Stage_engineRoom_startengine2SYM">
-                <div id="Stage_engineRoom_startengine2SYM_start_panel_trig"></div>
-            </div>
-            <div id="Stage_engineRoom_switchbtn">
-                <div id="Stage_engineRoom_switchbtn_viewSBbtn">
-                    <div id="Stage_engineRoom_switchbtn_ViewSwitchboard">View Switchboard</div>
                 </div>
             </div>
             <div id="Stage_engineRoom_engine2">
@@ -318,9 +314,6 @@
                     <div id="Stage_engineRoom_engine2_slide_panel_2_RoundRect2Copy2"></div>
                     <div id="Stage_engineRoom_engine2_slide_panel_2_RoundRect2"></div>
                 </div>
-            </div>
-            <div id="Stage_engineRoom_startengine1">
-                <div id="Stage_engineRoom_startengine1_start_panel_trig"></div>
             </div>
             <div id="Stage_engineRoom_engine1">
                 <div id="Stage_engineRoom_engine1_Text">Engine Panel Gen #1</div>
@@ -350,20 +343,18 @@
             </div>
             <div id="Stage_engineRoom_RoundRect"></div>
         </div>
-        <div id="Stage_intro_bg" class="edgeLoad-EDGE-55308311"></div>
-        <div id="Stage_sld_top" class="edgeLoad-EDGE-55308311"></div>
-        <div id="Stage_sld_bottom" class="edgeLoad-EDGE-55308311"></div>
+        <div id="Stage_startengine2" class="edgeLoad-EDGE-55308311">
+            <div id="Stage_startengine2_start_panel_trig"></div>
+        </div>
+        <div id="Stage_startengine1" class="edgeLoad-EDGE-55308311">
+            <div id="Stage_startengine1_start_panel_trig"></div>
+        </div>
+        <div id="Stage_switchbtn" class="edgeLoad-EDGE-55308311">
+            <div id="Stage_switchbtn_viewSBbtn">
+                <div id="Stage_switchbtn_ViewSwitchboard">View Switchboard</div>
+            </div>
+        </div>
         <div id="Stage_FAIL_PANEL" class="edgeLoad-EDGE-55308311"></div>
-        <div id="Stage_viewEngPanbtn" class="edgeLoad-EDGE-55308311">
-            <div id="Stage_viewEngPanbtn_Text4">Engine Room</div>
-            <div id="Stage_viewEngPanbtn_enginePanelBtn"></div>
-        </div>
-        <audio id="Stage_generator_sound" class="edgeLoad-EDGE-55308311"></audio>
-        <audio id="Stage_generator_sound2" class="edgeLoad-EDGE-55308311"></audio>
-        <div id="Stage_speed_control2" class="edgeLoad-EDGE-55308311">
-            <div id="Stage_speed_control2_RoundRect2Copy"></div>
-            <div id="Stage_speed_control2_RoundRect2"></div>
-        </div>
     </div>
 </body>
 </html>
