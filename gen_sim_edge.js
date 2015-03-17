@@ -3,11 +3,11 @@
 (function($,Edge,compId){var Composition=Edge.Composition,Symbol=Edge.Symbol;Edge.registerEventBinding(compId,function($){
 //Edge symbol: 'stage'
 (function(symbolName){Symbol.bindElementAction(compId,symbolName,"document","compositionReady",function(sym,e){var speedControl="idle";var gage_timers=[];function freqTimerFunction(startms,targetms,addinc,asymbol){var ms;console.log("enter timer--> startms: "+startms+", targetms: "+targetms+", addinc: "+addinc);if(addinc<Math.abs(startms-targetms)){ms=startms+addinc;try{asymbol.stop(ms);}
-catch(err){console.log("freq timer function cannot stop at "+ms);ms=targetms;}
+catch(err){console.log("freq timer function cannot stop at "+ms);asymbol.stop(targetms);return;}
 finally{sym.gen2.setRPMs2(Math.round(ms/1.5));console.log("setting timer--> startms: "+startms+", targetms: "+targetms+", addinc: "+addinc);setTimeout(freqTimerFunction,500,ms,targetms,addinc,asymbol);}}else{try{asymbol.stop(targetms);}
 catch(err){console.log("freq timer function cannot end at "+targetms);}
 finally{asymbol.stop(targetms);sym.gen2.setValue(Math.round(targetms/1.5));console.log("in try-catch-finally");}}};function gageTimerFunction(targetms,addinc,asymbol){var ordinal=1;try{var startpos=asymbol.getPosition();}
-catch(err){startpos=targetms;console.log('caught error in gage timer: '+startpos);}
+catch(err){startpos=targetms;console.log('caught error in gage timer: '+startpos);asymbol.stop(targetms);return;}
 if(addinc<Math.abs(startpos-targetms)){if(targetms<startpos){ordinal=-1;}
 asymbol.stop(startpos+(ordinal*addinc));gage_timers.push(setTimeout(gageTimerFunction,500,targetms,addinc,asymbol));}else{ms=targetms;try{asymbol.stop(ms);}
 catch(err){}};};var synchronize=function(){var synching=false;var speed=2;var genSynched=false;return{init:function(){synching=false;speed=2;},startSynch:function(){synching=true;genSynched=false;speed=-10;},setSynched:function(val){genSynched=val;},getSynched:function(){return genSynched;},synchStatus:function(){return synching;},checkStatus:function(){if(synching==true){var freq=Math.round(sym.hz1.getValue()-sym.hz2.getValue());if(freq>5){if(speed!=2){speed=2;sym.getSymbol("syncharrow").play("FAST");}}else if((freq<=5)&&(freq>0)){if(speed!=1){speed=1;sym.getSymbol("syncharrow").play("MEDIUM");}}else if(freq==0){if(speed!=0){speed=0;}
